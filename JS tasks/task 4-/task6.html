@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <h2>enter the number</h2>
+    <input type="text" id="num" size="30">
+    <button onclick="getday()">click</button>
+    <h3 id="ans"></h3>
+    </div>
+
+    <script>
+        function getday() {
+            var n = parseInt(document.getElementById("num").value)
+            var day
+            switch (n) {
+                case 1:
+                    day = "sunday"
+                    break
+                case 2:
+                    day = "monday"
+                    break
+                case 3:
+                    day = "tuesday"
+                    break
+                case 4:
+                    day = "wednesday"
+                    break
+                case 5:
+                    day = "thursday"
+                    break
+
+                case 6:
+                    day = "friday"
+                    break
+                case 7:
+                    day = "saturday"
+                    break
+                default:
+                    day="invalid entry"
+            }
+            document.getElementById("ans").innerHTML=(day)
+        }
+    </script>
+
+</body>
+
+</html>

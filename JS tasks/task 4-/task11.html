@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/task four/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h2>number of even numbers</h2>
+        <label for="">array size</label><br>
+        <input type="text" id="limit" size="30"><br>
+        <label for="">enter the values</label><br>
+        <input type="text" id="num" size="30"><br>
+        <button onclick="myf()">click</button>
+        <p id="ans"></p>
+
+
+    </div>
+
+    <script>
+        function myf()
+        {
+            var arr=[]
+            var count=0
+             var lim=document.getElementById("limit").value
+             var arr=document.getElementById("num").value
+             
+               var nums = arr.split(",");
+
+                
+             for(var i=0;i<=lim;i++)
+             {
+                if(nums[i]%2===0)
+                {
+                    count++;
+
+                }
+            }
+            document.getElementById("ans").innerHTML=("Number of even numbers in the given array is="+count)
+        }
+    </script>
+    
+</body>
+</html>

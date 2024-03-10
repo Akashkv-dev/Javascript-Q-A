@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h2>Array swapping</h2>
+        <label for="">array limit</label>
+        <input type="number" id="limit"><br>
+        <label for="">array-A</label>
+        <input type="text" id="a1" size="30"><br>
+        <label for="">array-B</label>
+        <input type="text" id="a2" size="30"><br>
+        <button onclick="myf()">swap</button>
+        <h3 id="array1"></h3>
+        <h3 id="array2"></h3>
+
+        <script>
+            function myf()
+            {
+                var ar1=[]
+                var ar2=[]
+                var temp=[]
+                var lim=document.getElementById("limit").value
+                ar1=document.getElementById("a1").value
+                ar2=document.getElementById("a2").value
+                temp=ar1
+                ar1=ar2
+                ar2=temp
+                document.getElementById("array1").innerHTML="array-A="+ar1
+                document.getElementById("array2").innerHTML="array-B="+ar2
+
+                
+            
+
+            }
+        </script>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h2>CALCULATE SIMPLE INTEREST</h2><br>
+        <label for="">Principle amount</label><br>
+        <input type="text" placeholder="Principle amount $" id="num1" size="30"><br><br>
+        <label for="">Interest rate</label><br>
+        <input type="text" placeholder="Interest rate %" id="num2"size="30"><br><br>
+        <label for="">number of years</label><br>
+        <input type="text" placeholder="number of years" id="num3"size="30"><br>
+        <button onclick="simple()" >submit</button>
+        <h3 id="result"></h3>
+
+
+    </div>
+
+    <script>
+        function simple()
+        {
+            var p=parseInt(document.getElementById("num1").value)
+            var r=parseFloat(document.getElementById("num2").value)
+            var n=parseFloat(document.getElementById("num3").value)
+            var si=(p*r*n)/100
+            document.getElementById("result").innerHTML=(si+"/-")
+        }
+    </script>
+</body>
+</html>

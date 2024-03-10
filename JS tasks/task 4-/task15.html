@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="num">
+    <button onclick="main()">click</button>
+    <script>
+        function main() {
+            var a = getArray()
+            displayArray(a)
+
+        }
+        function getArray() {
+            var ar = []
+            var ar = document.getElementById("num").value
+            var sp=ar.split(",")
+                console.log(sp);
+            return sp;
+
+
+        }
+        function displayArray(a) {
+            document.write(a)
+            console.log(a)
+
+        }
+    </script>
+
+</body>
+
+</html>

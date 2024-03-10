@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h2>Enter the limit</h2>
+    <input type="text"  id="num" size="30">
+    <button onclick="getsum()">click</button>
+    <h3 id="odd"></h3>
+    </div>
+
+    <script>
+        function getsum()
+        {
+            var n=parseFloat(document.getElementById("num").value)
+            var sum=0
+            for(var i=0;i<n;i++)
+            {
+                if(i%2!=0)
+                {
+                    sum=sum+i
+                }
+                 
+            } 
+            document.getElementById("odd").innerHTML=("sum of odd num is="+sum)
+            console.log(sum)
+              
+        }
+    </script>
+
+    
+</body>
+</html>

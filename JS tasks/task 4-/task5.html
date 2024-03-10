@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h2>Enter the mark</h2>
+        <input type="text" id="mark" size="30">
+        <button onclick="grade()">submit</button>
+        <h3 id="ans"></h3>
+    </div>
+<script>
+    function grade()
+    {
+        var mar=parseFloat(document.getElementById("mark").value)
+        if(mar>=90&&mar<=100)
+        {
+            document.getElementById("ans").innerHTML=("grade A")
+        }
+        else if(mar>=80&&mar<=89)
+        {
+            document.getElementById("ans").innerHTML=("grade B")
+        }
+        else if(mar>=70&&mar<=79)
+        {
+            document.getElementById("ans").innerHTML=("grade C")
+        }
+        else if(mar>=60&&mar<=69)
+        {
+            document.getElementById("ans").innerHTML=("grade D")
+        }
+        else if(mar>=50&&mar)
+        {
+            document.getElementById("ans").innerHTML=("grade E")
+
+        }
+        else if(mar<50&&mar>=0)
+        {
+            document.getElementById("ans").innerHTML=("failed")
+        }
+        else{
+            document.getElementById("ans").innerHTML=("ERROR")
+        }
+    }
+</script>
+    
+</body>
+</html>

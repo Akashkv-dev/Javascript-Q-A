@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/task four/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h2>Enter the mark </h2>
+        <input type="text" id="num" size="30"><br>
+        <button onclick="getmark()">click</button>
+        <h3 id="porf"></h3>
+    </div>
+
+    <script>
+        function getmark()
+        {
+            var mark=parseInt(document.getElementById("num").value)
+            if(mark<=100&&mark>=50)
+            {
+                document.getElementById("porf").innerHTML=("you passed the exam")
+            }
+            else if(mark<50&&mark>=0)
+            {
+                document.getElementById("porf").innerHTML=("you failed the exam")
+            }
+            else{
+                document.getElementById("porf").innerHTML=("wrong")
+            }
+        }
+    </script>
+</body>
+</html>

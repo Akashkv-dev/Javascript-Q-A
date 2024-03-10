@@ -1,0 +1,17 @@
+.box{
+    margin: auto;
+    width: 600PX;
+    height: 400PX;
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin-bottom: 10px;
+
+}

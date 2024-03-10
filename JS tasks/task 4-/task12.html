@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <h2>descending order</h2>
+        <label for="">enter the size of an array</label><br>
+        <input type="text" id="limit" size="30"><br>
+        <label for="">enter the values</label><br>
+        <input type="text" id="nums" size="30"><br>
+        <button onclick="myf()">click</button>
+        <p id="ans"></p>
+
+    </div>
+    <script>
+        function myf() {
+            var arr = [];
+            var lim = parseInt(document.getElementById("limit").value);
+            var arr =document.getElementById("nums").value;
+            var sor = arr.split(",");
+            sor.sort();
+            var rev = sor.reverse();
+            document.getElementById("ans").innerHTML= ("sorted array-" + rev);
+            console.log(rev);
+
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>
